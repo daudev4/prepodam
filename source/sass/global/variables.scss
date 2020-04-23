@@ -1,0 +1,68 @@
+// breakpoints
+$min-width: 320px;
+$max-width_mobile: 767px;
+$max-width_tablet: 1024px;
+$max-width_desktop: 1440px;
+
+// retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+// colors
+$black: #000000;
+$black_grayish: #25262a;
+
+$white: #ffffff;
+$white_grayish: #f1f1f1;
+
+$orange: #fe8057;
+$blue: #4e93e1;
+$gray: #696969;
+
+// color pallete
+$background-color_primary: $black;
+$background-color_secondary: $white;
+$background-color_accent: $orange;
+$background-color_menu: $black_grayish;
+
+$text-color_primary: $white;
+$text-color_secondary: $black;
+$text-color_accent: $orange;
+$text-color_title: $blue;
+
+// font-family
+$font-family_primary: "Montserrat", "Arial", sans-serif;
+$font-family_secondary: "Open Sans", "Arial", sans-serif;
+
+// font-size
+$font-size_xxxxl: 42px;
+$font-size_xxxl: 36px;
+$font-size_xxl: 30px;
+$font-size_xl: 24px;
+$font-size_l: 20px;
+$font-size_m: 18px;
+$font-size_s: 16px;
+$font-size_xs: 14px;
+$font-size_xxs: 12px;
+$font-size_xxxs: 10px;
+
+// line-height
+$line-height_default: normal;
+
+$line-height_xxxl: 48px;
+$line-height_xxl: 42px;
+$line-height_xl: 25px;
+$line-height_l: 24px;
+$line-height_m: 20px;
+$line-height_s: 18px;
+$line-height_xs: 16px;
+
+// letter-spacing
+$letter-spacing_button: 0.24px;
+
+$letter-spacing_xl: 1.26px;
+$letter-spacing_l: 0.72px;
+$letter-spacing_m: 0.6px;
+$letter-spacing_s: 0.48px;
+$letter-spacing_xs: 0.32px;
+$letter-spacing_xxs: 0.2px;

@@ -1,0 +1,36 @@
+.button {
+  @include button-reset;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0 10px;
+
+  @include font($font-family_primary, $font-size_xxs, 500, $line-height_default, $letter-spacing_button);
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+
+  @include transition;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 2px solid $background-color_accent;
+
+  &:hover,
+  &:focus {
+    background-color: $background-color_accent;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &_colored {
+    background-color: $background-color_accent;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+  }
+}

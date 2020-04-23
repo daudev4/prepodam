@@ -1,0 +1,241 @@
+.banner {
+  padding-top: 238px;
+  padding-bottom: 45px;
+
+  @include font($font-family_primary, $font-size_s, 400, $line-height_m, 0);
+  color: $text-color_primary;
+
+  background-color: $background-color_primary;
+  background-image: url('../img/banner-bg_desktop@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url('../img/banner-bg_desktop@2x.jpg');
+  }
+}
+
+.banner__inner {
+  @include container_desktop;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.banner__content {
+  width: 612px;
+  margin-right: 20px;
+  margin-bottom: 183px;
+  margin-left: auto;
+}
+
+.banner__title {
+  margin: 0;
+  margin-bottom: 38px;
+
+  font-size: $font-size_xxxxl;
+  line-height: $line-height_xxxl;
+  letter-spacing: $letter-spacing_xl;
+  color: $white_grayish;
+
+  &-highlight {
+    color: $text-color_accent;
+  }
+}
+
+.banner__text {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 55px;
+  padding-left: 216px;
+
+  font-family: $font-family_secondary;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -10px;
+    left: 20px;
+
+    width: 179px;
+    height: 65px;
+
+    background-image: url('../img/stars.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+  }
+}
+
+.banner__button {
+  display: flex;
+  width: 305px;
+  margin-right: 88px;
+  margin-left: auto;
+}
+
+.banner__details-anchor {
+  width: 140px;
+  margin: 0 auto;
+
+  @include transition;
+
+  &:hover,
+  &:focus {
+    .banner__details-text,
+    .banner__mouse-icon {
+      color: $text-color_accent;
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.banner__details-text {
+  display: block;
+
+  font-weight: 600;
+  font-size: $font-size_xxs;
+  line-height: $line-height_l;
+  letter-spacing: $letter-spacing_s;
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-color_primary;
+
+  @include transition;
+}
+
+.banner__mouse-icon {
+  position: relative;
+
+  display: block;
+  width: 24px;
+  height: 39px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+
+  color: $text-color_primary;
+
+  @include transition;
+  border-radius: 12px;
+  border: 2px solid currentColor;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 7px;
+    left: 50%;
+
+    width: 2px;
+    height: 7px;
+
+    @include transition;
+    transform: translateX(-50%);
+    background-color: currentColor;
+  }
+}
+
+@media (max-width: $max-width_tablet) {
+  .banner {
+    padding-bottom: 38px;
+
+    background-image: url('../img/banner-bg_tablet@1x.jpg');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../img/banner-bg_tablet@2x.jpg');
+    }
+  }
+
+  .banner__inner {
+    @include container_tablet;
+  }
+
+  .banner__content {
+    max-width: 516px;
+    margin-right: 4px;
+    margin-bottom: 143px;
+  }
+
+  .banner__title {
+    font-size: $font-size_xxxl;
+    line-height: $line-height_xxl;
+    letter-spacing: $letter-spacing_l;
+  }
+
+  .banner__text {
+    max-width: 396px;
+    margin-right: 13px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    padding-left: 0;
+
+    font-size: $font-size_xs;
+    line-height: $line-height_s;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .banner__button {
+    margin-right: auto;
+  }
+
+  .banner__details-text {
+    @include hidden;
+  }
+}
+
+@media (max-width: $max-width_mobile) {
+  .banner {
+    padding-top: 153px;
+    padding-bottom: 60px;
+
+    background-image: url('../img/banner-bg_mobile@1x.jpg');
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url('../img/banner-bg_mobile@2x.jpg');
+    }
+  }
+
+  .banner__inner {
+    @include container_mobile;
+  }
+
+  .banner__content {
+    margin: 0;
+
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .banner__title {
+    padding: 0 11px;
+    margin-bottom: 41px;
+
+    font-size: $font-size_l;
+    line-height: $line-height_l;
+    letter-spacing: $letter-spacing_xxs;
+    text-align: center;
+  }
+
+  .banner__text {
+    margin-right: auto;
+    margin-bottom: 66px;
+
+    font-size: $font-size_xxs;
+    line-height: $line-height_xs;
+    text-align: center;
+  }
+
+  .banner__details-anchor {
+    display: none;
+  }
+}

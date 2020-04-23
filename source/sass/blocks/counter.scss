@@ -1,0 +1,22 @@
+.counter {
+  width: 700px;
+  margin: 0 auto;
+  padding: 16px;
+
+  @include font($font-family_primary, $font-size_l, 600, $line-height_l, 0);
+  text-align: center;
+  color: $text-color_accent;
+
+  border: 2px solid $text-color_accent;
+  border-radius: 30px;
+}
+
+@media (max-width: $max-width_tablet) {
+  .counter {
+    width: 560px;
+    padding-top: 10px;
+    padding-bottom: 14px;
+
+    font-size: $font-size_m;
+  }
+}

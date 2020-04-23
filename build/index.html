@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Преподам - тестовое задание</title>
+  <link rel="preload" href="fonts/montserrat_400.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat_400.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat_500.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat_500.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat_600.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat_600.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat_800.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat_800.woff" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__inner">
+      <div class="page-header__top">
+        <a class="page-header__logo logo" href="#">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/logo_mobile@1x.png 1x, img/logo_mobile@2x.png 2x">
+            <source media="(max-width: 1024px)" srcset="img/logo_tablet@1x.png 1x, img/logo_tablet@2x.png 2x">
+            <img src="img/logo_desktop@1x.png" loading="lazy" width="111" height="111" srcset="img/logo_desktop@2x.png 2x" alt="АМ/ПРЕ - логотип Преподам">
+          </picture>
+        </a>
+        <div class="page-header__info">
+          <a class="page-header__link page-header__location" href="#">
+            Москва
+          </a>
+          <a class="page-header__link page-header__phone" href="tel:+7-800-562-3452">
+            +7 800-562-3452
+          </a>
+        </div>
+      </div>
+      <nav class="page-header__nav">
+        <ul class="page-header__nav-list page-header__nav-list_main">
+          <li class="page-header__nav-item">
+            <a class="page-header__link" href="#">
+              О проекте
+            </a>
+          </li>
+          <li class="page-header__nav-item">
+            <a class="page-header__link" href="#">
+              Онлайн-курсы
+            </a>
+          </li>
+          <li class="page-header__nav-item">
+            <a class="page-header__link" href="#">
+              Статьи
+            </a>
+          </li>
+        </ul>
+        <div class="page-header__user">
+          <a class="page-header__button button" href="#">
+            Преподавателям
+          </a>
+          <ul class="page-header__nav-list page-header__nav-list_user">
+            <li class="page-header__nav-item">
+              <a class="page-header__link" href="#">
+                Регистрация
+              </a>
+            </li>
+            <li class="page-header__nav-item">
+              <a class="page-header__link" href="#">
+                Вход
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <button class="page-header__menu-toggle" type="button">
+        <span class="visually-hidden">
+          Открыть/Закрыть меню
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <h1 class="visually-hidden">
+      Преподам - образовательная онлайн платформа
+    </h1>
+    <section class="banner">
+      <div class="banner__inner">
+        <div class="banner__content">
+          <h2 class="banner__title">
+            <span class="banner__title-highlight">Первая</span> образовательная
+            онлайн-платформа,
+            созданная преподами!
+          </h2>
+          <p class="banner__text">
+            Описание уникального торгового предложения или же
+            описание названия того или иного продукта, который на
+            первом экране
+          </p>
+          <a class="banner__button button button_colored" href="#">
+            Зарегистрироваться
+          </a>
+        </div>
+        <a class="banner__details-anchor" href="#program">
+          <span class="banner__mouse-icon"></span>
+          <span class="banner__details-text">
+            Подробнее ниже
+          </span>
+        </a>
+      </div>
+    </section>
+    <section class="program" id="program">
+      <h2 class="visually-hidden">
+        Образовательные программы
+      </h2>
+      <div class="program__inner">
+        <p class="program__counter counter">
+          <span class="counter__value">199</span> преподавателей уже работает на сайте
+        </p>
+        <div class="program__choice">
+          <h3 class="program__choice-title">
+            Выберите свою программу
+          </h3>
+          <div class="program__list-wrapper">
+            <ul class="program__list">
+              <li class="program__item">
+                <a class="program__link" href="#">
+                  <picture>
+                    <source media="(max-width: 1024px)" srcset="img/program-school_tablet@1x.jpg 1x, img/program-school_tablet@2x.jpg 2x">
+                    <img src="img/program-school_desktop@1x.jpg" width="413" h="450" srcset="img/program-school_desktop@2x.jpg 2x" alt="Фото ученика">
+                  </picture>
+                  <div class="program__text">
+                    <h4 class="program__item-title">
+                      Школьная программа
+                    </h4>
+                    <span class="program__details">
+                      Подробнее о программе
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="program__item">
+                <a class="program__link" href="#">
+                  <picture>
+                    <source media="(max-width: 1024px)" srcset="img/program-student_tablet@1x.jpg 1x, img/program-student_tablet@2x.jpg 2x">
+                    <img src="img/program-student_desktop@1x.jpg" width="414" h="450" srcset="img/program-student_desktop@2x.jpg 2x" alt="Фото студента">
+                  </picture>
+                  <div class="program__text">
+                    <h4 class="program__item-title">
+                      Студенческая программа
+                    </h4>
+                    <span class="program__details">
+                      Подробнее о программе
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li class="program__item">
+                <a class="program__link" href="#">
+                  <picture>
+                    <source media="(max-width: 1024px)" srcset="img/program-additional_tablet@1x.jpg 1x, img/program-additional_tablet@2x.jpg 2x">
+                    <img src="img/program-additional_desktop@1x.jpg" width="413" h="450" srcset="img/program-additional_desktop@2x.jpg 2x" alt="Фото работяги">
+                  </picture>
+                  <div class="program__text">
+                    <h4 class="program__item-title">
+                      Дополнительное образование
+                    </h4>
+                    <span class="program__details">
+                      Подробнее о программе
+                    </span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

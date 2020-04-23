@@ -1,0 +1,61 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
+body {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: $min-width;
+  min-height: 100%;
+
+  @include font-main();
+  color: $text-color_primary;
+
+  background-color: $background-color_secondary;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea {
+  border-radius: 0;
+}
+
+svg {
+  fill: inherit;
+}
+
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+}

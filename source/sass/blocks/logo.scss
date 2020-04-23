@@ -1,0 +1,14 @@
+.logo {
+  border-radius: 50%;
+
+  @include transition;
+
+  &[href]:hover,
+  &[href]:focus {
+    box-shadow: 0 0 0 3px $background-color_accent;
+  }
+
+  &[href]:active {
+    opacity: 0.5;
+  }
+}
