@@ -27,6 +27,8 @@
 .page-header__inner {
   @include container_desktop;
   padding: 0 5.555%;
+  display: flex;
+  justify-content: space-between;
 
   a {
     color: inherit
@@ -51,9 +53,9 @@
 }
 
 .page-header__top {
-  flex: 0 1 31.7%;
+  flex: 0 0 31.7%;
   justify-content: space-between;
-  margin-right: 2.3%;
+  margin-right: 20px;
 
   .page-header__link {
     letter-spacing: $letter-spacing_xs;
@@ -96,7 +98,7 @@
 }
 
 .page-header__nav {
-  flex: 0 1 66%;
+  flex: 0 1 65.8%;
   justify-content: space-between;
   max-width: 843px;
 }
@@ -119,13 +121,13 @@
   }
 
   &_user {
-    flex: 0 1 calc(43% + 10px);
+    flex: 0 1 calc(42.8% + 10px);
     padding-left: 10px;
   }
 }
 
 .page-header__user {
-  flex: 0 1 49.4%;
+  flex: 0 1 49.6%;
   justify-content: space-between;
 }
 
@@ -173,11 +175,22 @@
   }
 
   .page-header__info {
-    flex-basis: 60%;
+    flex-basis: 60.5%;
+  }
+
+  .page-header__location {
+    padding-bottom: 0;
+  }
+
+  .page-header__phone {
+    &::before {
+      margin-top: 2px;
+      margin-bottom: 0;
+    }
   }
 
   .page-header__nav {
-    flex-basis: 50.8%;
+    flex-basis: 50.85%;
   }
 
   .page-header__nav-list {
@@ -201,15 +214,17 @@
     .page-header__nav-list_user {
       z-index: 10;
       position: absolute;
-      top: 110px;
+      top: 100px;
       right: 35px;
 
       flex-direction: column;
       align-items: flex-start;
       display: none;
       min-width: 165px;
-      padding: 30px;
-      padding-right: 25px;
+      padding-top: 30px;
+      padding-right: 22px;
+      padding-bottom: 30px;
+      padding-left: 29px;
 
       background-color: $background-color_secondary;
       border-radius: 10px 0 10px 10px;
@@ -217,7 +232,7 @@
 
       .page-header__nav-item {
         margin: 0;
-        margin-bottom: 15px;
+        margin-bottom: 16px;
 
         font-weight: 500;
         color: $text-color_secondary;
@@ -225,6 +240,10 @@
         &:last-of-type {
           margin-bottom: 0;
         }
+      }
+
+      .page-header__link {
+        line-height: normal;
       }
     }
   }
@@ -237,6 +256,8 @@
     .page-header__menu-toggle {
       width: 38px;
       height: 38px;
+      margin: 0;
+      margin-left: auto;
 
       box-shadow: none;
 
@@ -262,9 +283,11 @@
   }
 
   .page-header__button {
+    margin-top: 1px;
     flex-basis: 150px;
 
     font-size: $font-size_xxxs;
+    letter-spacing: 0;
   }
 
   .page-header__menu-toggle {
@@ -273,11 +296,11 @@
     @include button-reset;
     flex-shrink: 0;
     display: block;
-    margin-left: auto;
-
     width: 38px;
     height: 26px;
-
+    margin-top: 1px;
+    margin-right: 2px;
+    margin-left: auto;
     color: $text-color_primary;
 
     @include transition;
@@ -337,6 +360,10 @@
 
       .page-header__nav {
         display: flex;
+      }
+
+      .page-header__menu-toggle {
+        margin-right: 30px;
       }
     }
   }
@@ -434,6 +461,7 @@
     flex-basis: 200px;
 
     font-size: $font-size_xxs;
+    letter-spacing: $letter-spacing_button;
   }
 
   .page-header__menu-toggle {

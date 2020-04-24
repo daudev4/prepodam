@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 40px;
-  padding: 0 10px;
+  padding: 0 10px 2px;
 
   @include font($font-family_primary, $font-size_xxs, 500, $line-height_default, $letter-spacing_button);
   text-transform: uppercase;
@@ -34,3 +34,4 @@
     }
   }
 }
+
